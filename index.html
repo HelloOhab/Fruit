@@ -5,22 +5,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="figma to html css template">
-    <title>Fruit | Fruit Shop</title>
     <!-- FontAwesome -->
     <script src="https://kit.fontawesome.com/9bad6f3f14.js" crossorigin="anonymous"></script>
     <!-- tailwind and daisy UI -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <title>Fruit | Fruit Shop</title>
     <link rel="frame icon" href="images/logo.png">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header class="max-w-7xl mx-auto sm:my-10">
+    <header>
+        <div class="container max-w-screen-sm lg:max-w-screen-lg md:max-w-screen-md mx-auto mt-[50px]">
+            <div class="main-header hidden md:block xl:block 2xl:block">
+                <div class="bg-[#F85559] flex items-center justify-between px-[30px] py-[40px] rounded-full">
+                    <nav class="flex-1">
+                        <a href="" class="text-white px-[30px] py-[10px] fontFamily:lato">Home</a>
+                        <a href="" class="text-white px-[30px] py-[10px] fontFamily:lato">About Us</a>
+                        <a href="" class="text-white px-[30px] py-[10px] fontFamily:lato">Shop</a>
+                        <a href="" class="text-white px-[30px] py-[10px] fontFamily:lato">All Fruits</a>
+                    </nav>
+                    <div class="flex-1">
+                        <img src="images/logo.png" class="mx-auto" alt="Logo">
+                    </div>
+                    <div class="flex-1">
+                        <form action="" class="ml-auto bg-white flex rounded-full items-center w-3/4 relative">
+                            <input type="search" placeholder="Search Here"
+                                class="px-4 py-2 w-full rounded-full focus:outline-none">
+                            <span class="absolute right-4"><i class="fa-solid fa-magnifying-glass"></i></span>
+                        </form>
+                    </div>
+                </div>
+            </div>
 
+            <div class="md:hidden lg:hidden xl:hidden 2xl:hidden">
+                <nav class="mobile-menu flex items-center justify-between px-4">
+                    <img src="./assets/img/mobile-logo.png" alt="">
+                    <button class="">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </nav>
+            </div>
+        </div>
     </header>
+
     <main>
-        <div class="container max-w-screen-sm lg:max-w-screen-lg md:max-w-screen-md  mx-auto rounded-full">
+        <div class="container max-w-screen-sm lg:max-w-screen-lg md:max-w-screen-md mx-auto ">
             <div class="carousel w-full">
                 <div id="slide1" class="carousel-item relative w-full">
                     <div class="hero min-h-screen " style="background-image: url(./images/banner1.png);">
@@ -539,7 +570,8 @@
     <footer class="bg-slate-950">
         <div class="container mx-auto">
             <div class="flex justify-center pt-32">
-                <a class="inline-flex items-center" href="#"><img src="images/logo.png" alt="" /> <span class="text-white text-4xl font-bold pl-4">Fruit Burst</span></a>
+                <a class="inline-flex items-center" href="#"><img src="images/logo.png" alt="" /> <span
+                        class="text-white text-4xl font-bold pl-4">Fruit Burst</span></a>
             </div>
             <div class="flex text-white justify-center gap-10 mt-16 mb-16">
                 <a class="link link-hover">Home</a>
@@ -556,4 +588,5 @@
     </footer>
 
 </body>
+
 </html>
