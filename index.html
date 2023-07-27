@@ -124,7 +124,7 @@
 
             <!-- Deals section -->
             <section
-                class="md:items-center sm:items-center  flex justify-between lg:flex-row mt-36 flex-col sm:gap-8 md:gap-6 md:flex-col">
+                class="container mx-auto flex justify-between lg:flex-row mt-36 flex-col sm:gap-8 md:gap-6 md:flex-col">
                 <div class="text-center lg:text-left">
                     <h1 class="font-extrabold text-5xl mb-6 sm:mb-4">Deals of the day</h1>
                     <p class="font-medium sm:mb-6">
@@ -396,12 +396,8 @@
 
             <!-- this is the team section -->
             <section class="mb-36">
-                <div class="container mx-auto">
-                    <div class="carousel-item relative w-full rounded-lg ">
-                        <img src="/images/banner1.png" class="object-cover w-full h-full" />
-                        <div class="w-full h-full absolute top-0 left-0 bg-black opacity-50 rounded-lg"></div>
-                        <div
-                            class="w-full absolute items-center left-1/2 transform -translate-x-1/2 translate-y-12 text-white text-center">
+                <div class="container mx-auto relative after:absolute after:w-full after:h-full after:bg-black after:top-0 after:left-0 after:bg-opacity-60 bg-[url('/images/banner1.png')] bg-center bg-cover bg-no-repeat  pt-20 pb-20">
+                        <div class="w-full text-white text-center relative z-50">
                             <h1 class="text-6xl font-extrabold mb-4">Meet our team</h1>
                             <p class="mb-12">
                                 Our diverse team creates magic together, making dreams come
@@ -448,7 +444,6 @@
                             </div>
                         </div>
                     </div>
-                </div>
             </section>
 
             <!-- Why Choose Us -->
